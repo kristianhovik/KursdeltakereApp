@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
   </section>
 `,
   /*templateUrl: './kursdeltaker-informasjon.component.html',*/
-  /*styleUrl: './kursdeltaker-informasjon.component.css'*/
+  styleUrl: './kursdeltaker-informasjon.component.css'
 })
 export class KursdeltakerInformasjonComponent {
 
