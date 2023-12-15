@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
             <button (click)="slettDeltaker(deltaker)">Slett</button>
           </li>
         </ul>
+        <button (click)="leggTilDeltaker()">Legg til deltaker</button>
       </form>
     </section>
   `,
@@ -38,5 +39,11 @@ export class KursdeltakerInformasjonComponent {
   slettDeltaker(deltaker: any): void {
     console.log('Slett deltaker:', deltaker);
     // Implementer slettingen, for eksempel å vise en bekreftelsesdialog og fjerne deltakeren fra listen.
+  }
+
+  leggTilDeltaker(): void {
+    const nyDeltaker = { id: this.kursdeltakere.length + 1, navn: 'Ny Deltaker'};
+    this.kursdeltakere.push(nyDeltaker);
+    console.log('Deltaker lagt til:', nyDeltaker);
   }
 }
