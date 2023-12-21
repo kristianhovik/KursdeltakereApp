@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ApiService } from '../kursdeltaker.service';
 
 @Component({
   selector: 'app-kursdeltaker-informasjon',
@@ -23,13 +24,25 @@ import { CommonModule } from '@angular/common';
 })
 export class KursdeltakerInformasjonComponent {
   kursdeltakere = [
-    { id: 1, navn: 'Deltaker 1' },
-    { id: 2, navn: 'Deltaker 2' },
-    { id: 3, navn: 'Deltaker 3' },
-    { id: 4, navn: 'Deltaker 4' },
-    { id: 5, navn: 'Deltaker 5' },
-    { id: 6, navn: 'Deltaker 6' },
+    { id: 1, navn: 'Pål Andersen' },
+    { id: 2, navn: 'Rolf Molagos' },
+    { id: 3, navn: 'Alex Knutolfson' },
+    { id: 4, navn: 'Peter Andersen' },
+    { id: 5, navn: 'Arne Lillestrand' },
+    { id: 6, navn: 'Rolf Andersen' },
   ];
+
+  constructor(private apiService: ApiService) {}
+
+  ngOninit(): void{
+    this.loadDeltakere();
+  }
+
+  loadDeltakere(): void {
+    this.apiService.getData().subscribe(data => {
+      this.kursdeltakere = data;
+    });
+  }
 
   redigerDeltaker(deltaker: any): void {
     console.log('Rediger deltaker:', deltaker);
