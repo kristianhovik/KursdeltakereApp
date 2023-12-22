@@ -22,12 +22,7 @@ export class RedigerDeltakerComponent {
     { Kommentar: 'Kommentar: '},
   ];
 
-  tekstFraKnapp: string = "høllæ";
-
-  leggTilTekst() {
-    // Her kan du legge til logikk for å fylle inputfeltet med tekst
-    this.tekstFraKnapp = 'Din tekst her';
-  }
+  
 
   
 

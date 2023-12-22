@@ -35,14 +35,10 @@ export class KursdeltakerInformasjonComponent {
 
   redigerDeltaker(deltaker: any): void {
     console.log('Rediger deltaker:', deltaker);
-    
-    // Implementer redigeringen, for eksempel å åpne et redigeringsvindu eller navigere til en redigeringsrute.
   }
 
   slettDeltaker(deltaker: any): void {
     console.log('Slett deltaker:', deltaker);
-    
-    // Implementer slettingen, for eksempel å vise en bekreftelsesdialog og fjerne deltakeren fra listen.
   }
 
   leggTilDeltaker(): void {
