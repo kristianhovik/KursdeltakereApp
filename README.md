@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+Sluttnotat: 
+
+Fikk ikke helt til å koble backend mot databasen. Når jeg skulle bruke connectionStringen fikk jeg bare autentifiseringserror som jeg ikke klarte å fikse selvom passord var riktig. Har ikke jobbet så mye med å koble backend med database og måtte lene meg mye på videoer og chatGPT, da ble det litt surr etterhvert. Fant heller ikke ut hvordan jeg skulle bekrefte om backend og frontend var koblet sammen. 
+
+Oppgaven virket overkommelig initialt, men viste seg å være litt mer inviklet enn hva jeg har tilegnet meg av kunnskap på studiet. Uansett om jeg ikke fikk det helt til, var det en morsom oppgave og veldig lærerrikt!
