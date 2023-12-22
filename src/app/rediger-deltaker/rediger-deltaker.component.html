@@ -1,0 +1,23 @@
+<section class="rediger-form-container">
+    <form>
+      <ul>
+        <h1>Rediger Deltaker</h1>
+        <li *ngFor="let deltaker of redigere_deltaker">
+            
+            {{ deltaker.id }}
+           {{ deltaker.navn }}
+          {{ deltaker.alder }}
+          {{ deltaker.Telefon }}
+          {{ deltaker.Epost }}
+          {{ deltaker.Kommentar }}
+          {{ deltaker.Allergener }}
+          <input  type="text" >
+          
+        </li>
+        <button>Lagre</button>
+      </ul>
+      
+    </form>
+  </section>
+
+ 

@@ -1,4 +1,3 @@
-// eksempel på en Angular-tjeneste (service) for å håndtere HTTP-forespørsler
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -7,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'https://localhost:7115'; // bytt ut med din API-endepunkt-URL
+  private apiUrl = 'https://localhost:7115'; 
 
   constructor(private http: HttpClient) {}
 
@@ -19,6 +18,6 @@ export class ApiService {
     return this.http.post<any>(`${this.apiUrl}`, data);
   }
 
-  // Legg til flere metoder etter behov
+  
 }
 

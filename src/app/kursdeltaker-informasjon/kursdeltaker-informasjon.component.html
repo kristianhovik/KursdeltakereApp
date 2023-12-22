@@ -1,1 +1,18 @@
-<p>kursdeltaker-informasjon works</p>
+
+
+<section class="form-container">
+  <h1>Kursdeltakere</h1>
+    <form>
+      <ul>
+        <li *ngFor="let deltaker of kursdeltakere">
+          {{ deltaker.navn }}
+          <button (click)="redigerDeltaker(deltaker)">Rediger</button>
+          <button (click)="slettDeltaker(deltaker)">Slett</button>
+        </li>
+      </ul>
+      <button (click)="leggTilDeltaker()">Legg til deltaker</button>
+    </form>
+  </section>
+  
+
+  
