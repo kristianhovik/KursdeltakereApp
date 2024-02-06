@@ -25,16 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-
-
-
-
-Sluttnotat: 
-
-Opprettet en liten liste med deltakere i starten for å ha noe å koble backend opp mot. Jeg brukte veldig mye tid på å prøve å koble sammen backend og frontend, i tillegg til å koble sammen backend med databasen. Jeg fikk aldri til å connecte backend med database, ei fikk jeg heller til å koble frontend med backend. Siden jeg brukte så mye tid på å forsøke å koble disse sammen, ble hverken frontend eller backend som jeg hadde forestilt meg. Siste dagen prøvde jeg å legge til noe relevant i frontend, som rediger-deltaker komponentet, har per nå ikke noe funksjonalitet det heller. 
-
-Jobbingen var preget av at det var mye nytt, og det som var litt kjent hadde jeg ikke jobbet med på et par år. Men jeg har lært veldig mye og selvom jeg ikke er helt fornøyd med resultatet, så var det gøy og veldig lærerrikt!
-
-
