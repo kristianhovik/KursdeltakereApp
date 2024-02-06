@@ -6,6 +6,7 @@
       <ul>
         <li *ngFor="let deltaker of kursdeltakere">
           {{ deltaker.navn }}
+          <a [routerLink='/redigerDeltaker', kursdeltaker.id]>Rediger</a>
           <button (click)="redigerDeltaker(deltaker)">Rediger</button>
           <button (click)="slettDeltaker(deltaker)">Slett</button>
         </li>
