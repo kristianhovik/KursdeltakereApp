@@ -4,17 +4,18 @@ import { ApiService } from '../kursdeltaker.service';
 import { RedigerDeltakerComponent } from '../rediger-deltaker/rediger-deltaker.component';
 import { FormsModule } from '@angular/forms';
 import { Kursdeltaker } from '../kursdeltaker';
-import { Routes } from '@angular/router';
+import { ROUTES, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-kursdeltaker-informasjon',
   standalone: true,
-  imports: [CommonModule, RedigerDeltakerComponent],
+  imports: [CommonModule, RedigerDeltakerComponent, RouterModule, FormsModule],
   templateUrl:'./kursdeltaker-informasjon.component.html',
   styleUrls: ['./kursdeltaker-informasjon.component.css']
 })
 export class KursdeltakerInformasjonComponent {
-  kursdeltakere: Kursdeltaker[] = [
+  kursdeltaker: Kursdeltaker[] = [
     {
       id: 1,
       navn: 'Ola Nordmann',
@@ -35,7 +36,7 @@ export class KursdeltakerInformasjonComponent {
 
   loadDeltakere(): void {
     this.apiService.getData().subscribe(data => {
-      this.kursdeltakere = data;
+      this.kursdeltaker = data;
     });
   }
 
@@ -48,7 +49,7 @@ export class KursdeltakerInformasjonComponent {
   }
 
   leggTilDeltaker(): void {
-    const nyDeltaker = { id: this.kursdeltakere.length + 1, navn: 'Ny Deltaker', alder: 0, epost: '', telefon: 0, allergener: "", kommentar: ""};
+    const nyDeltaker = { id: this.kursdeltaker.length + 1, navn: 'Ny Deltaker', alder: 0, epost: '', telefon: 0, allergener: "", kommentar: ""};
     //this.kursdeltakere.push(nyDeltaker);
     console.log('Deltaker lagt til:', nyDeltaker);
   }

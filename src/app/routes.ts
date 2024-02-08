@@ -12,12 +12,12 @@ export const routeConfig: Routes = [
       title: 'Home page'
     },
     {
-      path: '/kursdeltaker-informasjon',
+      path: 'kursdeltaker-informasjon',
       component: KursdeltakerInformasjonComponent,
       title: 'Kursdeltaker informasjon'
     },
     {
-      path: '/rediger-deltaker',
+      path: 'rediger-deltaker/:id',
       component: RedigerDeltakerComponent,
       title: 'Rediger deltaker'
     }
