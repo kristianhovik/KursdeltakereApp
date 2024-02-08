@@ -4,10 +4,10 @@
   <h1>Kursdeltakere</h1>
     <form>
       <ul>
-        <li *ngFor="let deltaker of kursdeltakere">
+        <li *ngFor="let deltaker of kursdeltaker">
           {{ deltaker.navn }}
-          <a [routerLink='/redigerDeltaker', kursdeltaker.id]>Rediger</a>
-          <button (click)="redigerDeltaker(deltaker)">Rediger</button>
+          
+            <button [routerLink]="['/rediger-deltaker', deltaker.id]">Rediger</button>
           <button (click)="slettDeltaker(deltaker)">Slett</button>
         </li>
       </ul>

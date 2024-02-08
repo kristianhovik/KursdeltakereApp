@@ -13,8 +13,8 @@ bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(HttpClientModule),
     provideRouter(routeConfig),
-    provideProtractorTestingSupport(),
-    routeConfig
+    provideProtractorTestingSupport()
+    
   ]
 }
 ).catch(err => console.error(err));

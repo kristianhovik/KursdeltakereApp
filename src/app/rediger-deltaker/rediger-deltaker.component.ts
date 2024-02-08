@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { KursdeltakerInformasjonComponent } from '../kursdeltaker-informasjon/kursdeltaker-informasjon.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-rediger-deltaker',
   standalone: true,
-  imports: [CommonModule, KursdeltakerInformasjonComponent, FormsModule],
+  imports: [CommonModule, KursdeltakerInformasjonComponent, FormsModule, RouterModule],
   templateUrl: './rediger-deltaker.component.html',
   styleUrl: './rediger-deltaker.component.css'
 })
