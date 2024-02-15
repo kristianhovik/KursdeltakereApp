@@ -11,15 +11,13 @@ import { AppComponent } from './app.component';
 import { KursdeltakerInformasjonComponent } from './kursdeltaker-informasjon/kursdeltaker-informasjon.component';
 import { RedigerDeltakerComponent } from './rediger-deltaker/rediger-deltaker.component';
 
-const routes: Routes = [
-  { path: 'rediger-deltaker.component', component: KursdeltakerInformasjonComponent }
-];
+
 
 
 @NgModule({
     declarations: [],
     imports: [
-      RouterModule.forRoot(routes),
+      
       BrowserModule,
       FormsModule,
       HttpClientModule,

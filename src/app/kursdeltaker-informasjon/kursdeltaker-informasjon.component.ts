@@ -35,7 +35,7 @@ export class KursdeltakerInformasjonComponent {
   }
 
   loadDeltakere(): void {
-    this.apiService.getData().subscribe(data => {
+    this.apiService.getDeltakere().subscribe(data => {
       this.kursdeltaker = data;
     });
   }

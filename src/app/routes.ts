@@ -6,11 +6,7 @@ import { RedigerDeltakerComponent } from './rediger-deltaker/rediger-deltaker.co
 
 
 export const routeConfig: Routes = [ 
-    {
-      path: '',
-      component: AppComponent,
-      title: 'Home page'
-    },
+   
     {
       path: 'kursdeltaker-informasjon',
       component: KursdeltakerInformasjonComponent,
